@@ -28,7 +28,6 @@
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "mocha test",
-    "start": "bin/peerjs --port ${PORT:=9000}"
+    "test": "mocha test"
   }
 }
