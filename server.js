@@ -3,7 +3,9 @@ var app = express();
 var ExpressPeerServer = require('./lib/index').ExpressPeerServer;
 
 var server = app.listen(process.env.PORT || 9000);
-var options = {};
+var options = {
+    allow_discovery: true
+};
 var peerserver = ExpressPeerServer(server, options);
 
 app.use('/api', peerserver);
